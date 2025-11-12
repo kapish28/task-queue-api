@@ -1,19 +1,30 @@
-# Task Queue API
+# Task Queue API — Final Year Project
 
-Simple Node.js + Express backend demonstrating asynchronous task handling (event-driven).
+This project demonstrates asynchronous task processing using Node.js and Express.js.  
+It simulates an event-driven backend where tasks are queued and processed in the background — similar to architectures used in real-world CRM or messaging systems like DoubleTick.io.
 
-## Features
-- POST /add-task  -> add a task to the queue
-- GET /queue      -> view pending tasks
-- GET /processed  -> view processed tasks
-- Background worker processes tasks periodically
+---
 
-## Tech
-Node.js, Express
+## 🎯 Objective
+To understand and implement backend systems that use asynchronous and event-driven task handling to improve performance and scalability.
 
-## Run locally
-1. Clone: `git clone https://github.com/<your-username>/task-queue-api.git`
-2. `cd task-queue-api`
-3. `npm install`
-4. `npm start`
-5. POST a task: `POST http://localhost:3000/add-task` with JSON body `{ "task": "Send message" }`
+---
+
+## ⚙️ Features
+- **POST /add-task** → Add a task to the queue  
+- **GET /queue** → View pending tasks  
+- **GET /processed** → View processed tasks  
+- Background worker automatically processes queued tasks at regular intervals
+
+---
+
+## 🧠 Tech Stack
+Node.js | Express.js | JavaScript
+
+---
+
+## 🚀 How to Run Locally
+1. Clone the repository  
+   ```bash
+   git clone https://github.com/kapish28/task-queue-api.git
+   cd task-queue-api
